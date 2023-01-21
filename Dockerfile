@@ -1,4 +1,4 @@
-from python:3.6.8
+from python:3.7
 
 run apt-get update
 run apt-get install -y git aria2 unzip
@@ -7,7 +7,7 @@ workdir /storybro
 
 env POETRY_VIRTUALENVS_CREATE=false
 
-run pip install poetry tensorflow==1.15
+run pip install poetry tensorflow==2.2.0
 
 run touch README.md
 copy pyproject.toml pyproject.toml
